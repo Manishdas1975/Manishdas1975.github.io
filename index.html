@@ -3,39 +3,51 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <head>
+    <meta name="viewport" content="width=device-width", initial-scale=1>
     <title>My Portfolio</title>
 </head>
-
 <body>
-    <!-- old html file -->
-     <header id="header" class="main-header">
+    <header class="main-header">
+      <div class="top-container-a">
+        <div class="title">
+          <h1>My Portfolio</h1>
+        </div>
         <nav class="main-nav">
-           <!--  <ul class="list-items">
-               <li><a href="../html/index.html" title="">Home</a></li>
-               old line for more page insertion
-               <li><a href="" title="">Projects</a></li>
-               <li><a href="" title="">About me</a></li>
-               <li><a href="" title="">Contact me</a></li>
-           </ul> -->
+          <ul class="main-nav-list">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
         </nav>
-        <h1 class="portfolio">my portfolio</h1>
-        <p>Hello this my first attempt at making a portfolio
-        website and looks pretty dull. This is just an attempt
-        at making a responsive website(albeit a bad one).</p>
-    </header> <!-- /header -->
+      </div>
+    </header>
 
-        <h3 class="bio">Bio</h3>
-        <h3 class="project">Projects</h3>
-        <p>Soon to come!</p>
-            <ul class="list">
-                <li><a href="#"class="btn1">project1</a></li>
-                <li><a href="#"class="btn2">project2</a></li>
-            </ul>
-     <footer class="<footer">
-        <h3 class="contact">Contact me</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p><a href="mailto:dasmanish@gmail.com?subject=Important Information" >email me</a>@gmail.com</p>
+    <div class="top-container-b">
+      <section class="bio">
+        <h1><a id="bio">Bio</a></h1>
+        <p class="info">Hello I am Manish. I am currently learning about
+        HTML & CSS. Working on improving myself so that
+        i can start working as a freelance.  </p>
+        </section>
+      <section class="project">
+        <h1><a id="project">Projects</a></h1>
+        <h3>Project List</h3>
+        <p class="info">soon to come!</p>
+        <ul class="project-info-list">
+          <li>Project1</li>
+          <li>Project2</li>
+        </ul>
+      </section>
+      <section class="contact">
+        <h1><a id="contact">Contact Me</a></h1>
+          <p class="info">Thanks for visiting the website.</p>
+          <p class="info">Feel free to contact if you have a feedback.</p>
+      </section>
+    </div>
+
+    <footer>
+      <p><a href="mailto:dasmanish6@gmail.com?subject=Important Information" >dasmanish6</a>@gmail.com</p>
+      <p><a href="https://unsplash.com/@adamhornyak">Image by Adam Hornyak</a></p>
     </footer>
-
 </body>
 </html>
