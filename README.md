@@ -1,2 +1,3 @@
 # portfolio.github.io
-simple site design. trying to create a respnsive web page.
+simple site designed with smartphone responsiveness in mind.
+Using media-queries.
