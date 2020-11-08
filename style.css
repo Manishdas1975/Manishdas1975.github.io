@@ -62,9 +62,10 @@ header{
 
 body{
     background: url(image.jpg);
+    color:#6a856b;
     font-family: Constantia, Palatino, 'Palatino Linotype',  'Palatino LT STD', Georgia, serif;
     font-weight: 500;
-    color:black;
+    
 }
 
 .top-container-b{
