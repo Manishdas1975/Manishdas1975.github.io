@@ -1,3 +1,4 @@
 # portfolio.github.io
+
 simple site designed with smartphone responsiveness in mind.
-Using media-queries.
+Using viewport for scaling and media-queries for desktop version of the website.

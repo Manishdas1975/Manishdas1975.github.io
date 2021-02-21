@@ -1,119 +1,162 @@
 /*site designed by Manishdas1975.github.io for personal work*/
 /*only html and css used in making the site. 1st attempt at */
 /*making a mobile first website.*/
+/* disable extra borders after editing. */
 
 /*layout*/
 
-html{
-    margin: 0;
-    padding: 0;
+html {
+  margin: 0;
+  padding: 0;
 }
 
-header{
-    background: #D9B3F4;
-    display: flex;
-    flex-direction: column;
-
+header {
+  background: #d9b3f4;
+  display: flex;
+  flex-direction: column;
 }
 
-.top-container-a{
-    /*border:2px solid green;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.top-container-a {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4em;
+  background: url(/image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #36393b;
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.main-nav-list{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /*border: 2px solid red;*/
-    margin-bottom: :2em 0;
-    background: #AD9BB5;
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 2px solid red; */
+  margin-bottom: 2em 0;
 }
 
-.bio{
-    /*border: 2px solid red;*/
-    padding: 2rem;
+.bio {
+  /*border: 2px solid blue;*/
+  padding: 2rem;
 }
 
-.project{
-    /*border: 2px solid green;*/
-    padding: 2rem;
+.project {
+  /* border: 2px solid green; */
+  padding: 2rem;
 }
 
-.project-info-list{
-    list-style: none;
-    font: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2em;
-    /*border: 2px solid black;*/
+.project-info-list {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2em;
+  /* border: 2px solid rgb(250, 244, 244); */
 }
 
-.contact{
-    /*border: 2px solid red;*/
-    padding: 2rem;
+.project-box-a {
+  /* border: 2px dotted red; */
+  background-color: darkgrey;
+  color: #2b1919;
+}
+
+.project-box-a img {
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  border-radius: 5px 0px 5px 0px;
+}
+
+.project-box-a button {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 0.25em 0.75em;
+  border-radius: 0px 12px 0px 12px;
+}
+
+.contact {
+  /* border: 2px solid red; */
+  padding: 2rem;
 }
 
 /*setting up image and font style*/
 
-body{
-    background: url(image.jpg);
-    color:#2d3c2e;
-    font-family: Constantia, Palatino, 'Palatino Linotype',  'Palatino LT STD', Georgia, serif;
-    font-weight: 500;
-    
+body {
+  /* background: url(image.jpg); */
+  background-color: #36393b;
+  color: #bfb6bb;
+  font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD",
+    Georgia, serif;
+  font-weight: 500;
 }
 
-.top-container-b{
-    background: url(image.jpg);
-    background-image: cover;
+.top-container-b {
+  /* background: url(image.jpg); */
+  background-image: cover;
 }
 
 /*heading 1 representation*/
 
-body h1{
-    font-family: Cambria, Georgia, serif;
-    display: inline-block;
+body h1 {
+  font-family: Cambria, Georgia, serif;
+  display: inline-block;
 }
 
 body h1:hover,
-body h1:focus
-{
-    border-bottom: 2px solid black;
-    background: white;
+body h1:focus {
+  border-bottom: 2px solid black;
+  background: rgb(131, 40, 111);
 }
 
 /*creating link for page sections at top of the page*/
 
-header a{
-    text-decoration: none;
-    color: black;
+header a {
+  text-decoration: none;
+  color: black;
 }
-header a:hover{
-    color: #0E4B0F;
-    border: .125em solid black;
-    border-radius: 10px;
+header a:hover {
+  color: #0e4b0f;
+  border: 0.125em solid black;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #9a69af;
 }
 
 /*creating media queries for the site in desktop mode*/
 
-@media (min-width: 650px){
+@media (min-width: 650px) {
+  .top-container-a {
+    padding: 200px;
+  }
 
+  .main-header {
+    border-radius: 20px;
+  }
 
-    .main-nav-list{
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 2em;
-        border-spacing: unset;
-    }
+  .main-nav-list {
+    padding: 2em;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border-spacing: unset; */
+  }
 
-    .project-info-list{
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: center;
-    }
+  .project-info-list {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .project-box-a {
+    max-width: 400px;
+  }
 }
