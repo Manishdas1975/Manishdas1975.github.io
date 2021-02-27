@@ -56,8 +56,8 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 2em;
+  justify-content: center;
+  padding: 1.5em;
   /* border: 2px solid rgb(250, 244, 244); */
 }
 
@@ -67,14 +67,22 @@ header {
   color: #2b1919;
 }
 
-.project-box-a img {
-  object-fit: cover;
-  width: 90%;
-  height: 90%;
+.project-box-b {
+  /* border: 2px dotted red; */
+  background-color: darkgrey;
+  color: #2b1919;
+}
+
+.project-box-a img,
+.project-box-b img {
+  object-fit: scale-down;
+  width: 40%;
+  height: auto;
   border-radius: 5px 0px 5px 0px;
 }
 
-.project-box-a button {
+.project-box-a button,
+.project-box-b button {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-weight: 300;
@@ -88,7 +96,7 @@ header {
   padding: 2rem;
 }
 
-/*setting up image and font style*/
+/*setting up body image and font style*/
 
 body {
   /* background: url(image.jpg); */
@@ -121,10 +129,10 @@ body h1:focus {
 
 header a {
   text-decoration: none;
-  color: black;
+  color: rgb(189, 45, 45);
 }
 header a:hover {
-  color: #0e4b0f;
+  color: #15a315;
   border: 0.125em solid black;
   border-radius: 10px;
 }
@@ -136,6 +144,12 @@ footer {
 /*creating media queries for the site in desktop mode*/
 
 @media (min-width: 650px) {
+  header a:hover {
+    color: #af2828;
+    border: #584012 solid black;
+    border-radius: 10px;
+  }
+
   .top-container-a {
     padding: 200px;
   }
@@ -157,6 +171,10 @@ footer {
     align-content: center;
   }
   .project-box-a {
+    max-width: 400px;
+  }
+
+  .project-box-b {
     max-width: 400px;
   }
 }
