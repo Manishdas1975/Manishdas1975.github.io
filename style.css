@@ -1,7 +1,6 @@
 /*site designed by Manishdas1975.github.io for personal work*/
 /*only html and css used in making the site. 1st attempt at */
 /*making a mobile first website.*/
-/* disable extra borders after editing. */
 
 /*layout*/
 
@@ -25,7 +24,7 @@ header {
   background: url(/image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: #36393b;
+  color: rgb(189, 45, 45);
 }
 .social {
   display: flex;
@@ -152,6 +151,7 @@ footer {
 
   .top-container-a {
     padding: 200px;
+    color: #3b3638;
   }
 
   .main-header {
